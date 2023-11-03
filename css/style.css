@@ -185,6 +185,7 @@
     background: #fff;
     margin: 0 10px 0 0;
     border-radius: 2px;
+    overflow: hidden;
 }
 
 .MainVisual .VisualSlide .slick-dots li::after {

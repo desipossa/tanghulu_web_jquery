@@ -3,6 +3,8 @@ $(function () {
         arrows: false,
         autoplay: true,
         dots: true,
+        pauseOnHover: false,
+        pauseOnActive: false,
     });
 
     $('.totop').on('click', function () {
