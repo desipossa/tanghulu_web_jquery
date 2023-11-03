@@ -1,0 +1,120 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    line-height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.gnb>ul {
+    display: flex;
+}
+
+.gnb>ul>li>a {
+    display: block;
+    padding: 0 24px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.gnb>ul>li {
+    position: relative;
+}
+
+.gnb>ul>li .sub {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    width: 150px;
+    line-height: 40px;
+    border: 4px solid #ddd;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.gnb>ul>li:hover .sub {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.gnb>ul>li .sub li~li {
+    border-top: 1px solid #ddd;
+}
+
+.gnb>ul>li .sub a {
+    display: block;
+    padding: 0 24px;
+}
+
+.Header .utils a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 4px;
+}
+
+.MainVisual .VisualSlide .itm {
+    position: relative;
+    height: 100vh;
+}
+
+.MainVisual .VisualSlide .itm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.MainVisual .VisualSlide .itm01 {
+    background: url(../images/m01.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .VisualSlide .itm02 {
+    background: url(../images/m02.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .VisualSlide .itm03 {
+    background: url(../images/m03.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .VisualSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.MainVisual .VisualSlide .slogan strong {
+    display: block;
+    margin: 0 0 22px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.MainVisual .VisualSlide .slogan p {
+    font-size: 18px;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+    line-height: 22px;
+}
