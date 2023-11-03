@@ -1,3 +1,35 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 120px 0;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 22px 0;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+
+
 .Header {
     position: fixed;
     top: 0;
@@ -117,4 +149,188 @@
     text-shadow: 0 0 1px #000;
     color: #fff;
     line-height: 22px;
+}
+
+.MainFrancuise .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.MainFrancuise .inner>* {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 0 0 32px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.MainFrancuise .img_box {
+    margin: 0 0 24px 0;
+}
+
+.MainFrancuise .itm {
+    position: relative;
+}
+
+.MainFrancuise .itm a::after {
+    content: "더보기";
+    position: absolute;
+    top: 100px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+.MainFrancuise .itm h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 21px 0;
+    padding: 0 24px;
+}
+
+.MainFrancuise .itm p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 24px;
+}
+
+.MainBanner {
+    position: relative;
+    background: url(../images/m01.jpg) no-repeat fixed center center/cover;
+}
+
+.MainBanner::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.MainBanner .title {
+    position: relative;
+    margin: 0 auto 0 auto;
+    color: #fff;
+    text-overflow: 0 0 2px #000;
+}
+
+.MainFranchiseOrder {}
+
+.MainFranchiseOrder .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.MainFranchiseOrder .inner>* {
+    padding: 32px 24px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.MainFranchiseOrder .odr {
+    position: relative;
+}
+
+.MainFranchiseOrder .odr h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 22px 0;
+}
+
+.MainFranchiseOrder .odr p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.MainFranchiseOrder .odr::after {
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    right: 24px;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+
+    transform: translate(0, -20px);
+}
+
+.MainFranchiseOrder .odr h3::before {
+    content: attr(data-step);
+    display: block;
+    margin: 0 0 8px 0;
+    color: #f00;
+    font-size: 14px;
+}
+
+.Footer {
+    padding: 80px 0;
+    background: #333;
+    color: #ddd;
+}
+
+.Footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .link {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 24px 0;
+}
+
+.Footer .link li {
+    position: relative;
+}
+
+.Footer .link li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 12px;
+    background: #666;
+}
+
+.Footer .company {
+    margin: 0 0 24px 0;
+}
+
+.Footer .company li {
+    display: inline-block;
+    margin: 0 18px 4px 0;
+    font-size: 14px;
+}
+
+.Footer .customer {
+    white-space: nowrap;
+}
+
+.Footer .customer .tel i {
+    padding: 8px;
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 16px 0 0;
+}
+
+.Footer .customer .tel span {
+    font-size: 32px;
+    font-weight: 900;
 }
